@@ -28,5 +28,5 @@ Curso Completo de Desenvolvedor RPA com UiPath - Udemy
 - Usar filas
 
 # LINK DO CURSO
-Para quem tiver interesse em aprender sobre o uipath, segue o link [Curso Completo de Desenvolvedor RPA com UiPath](https://www.udemy.com/course/curso-completo-de-desenvolvedor-rpa-com-uipath/) 
-Curso muito bom com ótima didática e estou amando <3 
+Para quem tiver interesse em aprender sobre o uipath, segue o link [Curso Completo de Desenvolvedor RPA com UiPath](https://www.udemy.com/course/curso-completo-de-desenvolvedor-rpa-com-uipath/) .
+Curso muito bom, com ótima didática e estou amando <3 
