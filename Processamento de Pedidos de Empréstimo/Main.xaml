@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="604,2885.9999999999995" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1178,3348" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -41,6 +41,8 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>System.Security</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -105,7 +107,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="568,2821.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1188,3283.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strCaminhoExcel">
         <Variable.Default>
@@ -124,7 +126,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="506,280.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[strCaminhoExcel]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1126,280.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[strCaminhoExcel]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
@@ -147,32 +149,32 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="506,2390" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="1126,2852" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="472,2171.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1092,2633.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaPedidosEmprestimo]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,2058" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaPedidosEmprestimo]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1030,2520" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,1869.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="996,2331.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Email do Solicitante: &quot;+CurrentRow(0).ToString+ &quot;  Montante do Empréstimo: &quot;+CurrentRow(1).ToString]" />
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email Address'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(0).ToString]" Version="V3">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,146" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Email do Solicitante: &quot;+CurrentRow(0).ToString+ &quot;  Montante do Empréstimo: &quot;+CurrentRow(1).ToString]" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email Address'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="954,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(0).ToString]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/apply" CvElementArea="559, 486, 801, 41" CvTextArea="572, 499, 160, 15" CvTextArgument="Enter email address" CvType="InputBox" DesignTimeRectangle="560, 533, 800, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ng-untouched ng-pristine ng-valid' aaname='' /&gt;" Guid="026d22d4-800a-44d6-a5fc-b776a75c1f20" InformativeScreenshot="4ea3cd8316eb7f6e8b4cae0bbc8cda8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -183,7 +185,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Loan Amount Requested'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(1).ToString]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Loan Amount Requested'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,220" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(1).ToString]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/apply" CvElementArea="561, 572, 800, 40" CvTextArea="572, 585, 553, 19" CvTextArgument="Enter loan amount you are looking for, no need to put commas either" CvType="InputBox" DesignTimeRectangle="560, 619, 800, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT amount'" FullSelectorArgument="&lt;webctrl id='amount' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='amount' tag='INPUT' type='number' class='form-control ng-untouched ng-pristine ng-valid' aaname='' /&gt;" Guid="5d54ac10-14c1-497b-8693-00b6784d4538" InformativeScreenshot="69267233a43be0845691e85f03e98a99.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -194,7 +196,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NSelectItem DisplayName="Select Item 'Loan Term'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow(2).ToString]" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V3">
+                    <uix:NSelectItem DisplayName="Select Item 'Loan Term'" sap:VirtualizedContainerService.HintSize="954,158.66666666666666" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow(2).ToString]" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V3">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="4">
                           <x:String>1</x:String>
@@ -213,7 +215,7 @@
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
                     </uix:NSelectItem>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Yearly'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(3).ToString]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Yearly'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,220" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(3).ToString]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/apply" CvElementArea="559, 493, 802, 41" CvTextArea="572, 506, 362, 19" CvTextArgument="How much do you make before taxes a year?" CvType="InputBox" DesignTimeRectangle="560, 495, 800, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT income'" FullSelectorArgument="&lt;webctrl id='income' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='income' tag='INPUT' type='number' class='form-control ng-untouched ng-pristine ng-valid' aaname='Current Yearly Income (Before Taxes)' /&gt;" Guid="0ded8866-791b-4110-9bea-fe2bf9c3444b" InformativeScreenshot="8c26501da47a40a8dae3cc2d18ab97ed.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -224,7 +226,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Age'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(4).ToString]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Age'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,220" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Text="[CurrentRow(4).ToString]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/apply" CvElementArea="561, 587, 799, 40" CvTextArea="572, 600, 237, 19" CvTextArgument="How many years old are you?" CvType="InputBox" DesignTimeRectangle="560, 589, 800, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT age'" FullSelectorArgument="&lt;webctrl id='age' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='age' tag='INPUT' type='number' class='form-control ng-untouched ng-pristine ng-valid' aaname='Age' /&gt;" Guid="96d2935f-28b4-4454-93a8-5a6af17fd0fe" InformativeScreenshot="4639529312541691041d001e8f725743.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -235,12 +237,37 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit Loan Application'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit Loan Application'" sap:VirtualizedContainerService.HintSize="954,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/apply" CvElementArea="721, 671, 479, 50" CvTextArea="861, 688, 196, 19" CvTextArgument="Submit Loan Application" CvType="Button" DesignTimeRectangle="720, 672, 480, 50" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit Loan Application'" FullSelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' type='submit' class='btn btn-blue-outline form-button' aaname='Submit Loan Application' check:innerText='Submit Loan Application' /&gt;" Guid="0d5ef186-c747-44df-9a4b-581755dfdb12" InformativeScreenshot="3233f4d525dff700e07738311f39ff09.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply For Another Loan'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V3">
+                    <uix:NCheckState DisplayName="Check App State 'You've been'" sap:VirtualizedContainerService.HintSize="954,422" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,202" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,86" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;APROVADO!&quot;]" />
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,202" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,86" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;NÃO APROVADO!&quot;]" />
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/result/652332dcb75a6174ec3ac7b9/8/true" CvTextArea="503, 325, 909, 46" CvTextArgument="You've been approved for a loan with UiBank!" CvType="Text" DesignTimeRectangle="425, 321, 1070, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'You've been'" FullSelectorArgument="&lt;webctrl idx='2' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H1' class='' aaname=' You&amp;apos;ve been approved for a loan with UiBank! ' check:innerText='You&amp;apos;ve been approved for a loan with UiBank!' /&gt;" Guid="7cfb8613-157a-47d4-a7ca-7987346e25b3" InformativeScreenshot="788d75af820cdc17e9edbb80337726b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply For Another Loan'" sap:VirtualizedContainerService.HintSize="954,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1a735fd1-77c2-44e2-8ac6-580232e99288" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/result/65231e58b75a6174ec3ac7a6/8/true" CvElementArea="844, 648, 230, 51" CvTextArea="866, 665, 186, 19" CvTextArgument="Apply For Another Loan" CvType="Button" DesignTimeRectangle="845, 649, 230, 50" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Apply For Another Loan'" FullSelectorArgument="&lt;webctrl id='applyForNewLoanButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='applyForNewLoanButton' tag='BUTTON' type='submit' class='btn form-button btn-blue-outline btn-xl' aaname='applyForNewLoanButton' check:innerText='Apply For Another Loan' /&gt;" Guid="e9f0c751-3802-4512-b189-7801a7614157" InformativeScreenshot="7ac7c90a018897923c3a9832490e414c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                       </uix:NClick.Target>
