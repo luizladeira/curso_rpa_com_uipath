@@ -1,5 +1,6 @@
 {
   "name": "Depuracao",
+  "projectId": "e22ea14c-d062-4a9c-bd85-77f9fe1bda8b",
   "description": "Modo Depuração",
   "main": "Main.xaml",
   "dependencies": {
@@ -21,6 +22,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -42,7 +44,8 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
