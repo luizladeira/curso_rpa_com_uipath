@@ -11,7 +11,14 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "iCont&Sequence_2",
+        "strIdEmprestimo&Sequence_9",
+        "strAPR&Sequence_9",
+        "tabelaPedidosEmprestimo&Sequence_2",
+        "strUibankURL&Sequence_2",
+        "strCaminhoExcel&Sequence_2"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
