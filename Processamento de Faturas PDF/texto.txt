@@ -1,0 +1,26 @@
+this*
+Invoice #43214
+Invoice Date: 21/09/2020
+Due Date 12/10/2020
+Invoiced To
+Some Company LTD - Robotic Automations
+3216 Maple Court, California. N/1O 63101 USA
+Description
+Starter Shared Hosting - (28/09/2016 - 27/10/2016)
+Hosting Location. United Kingdom (UK)
+ThisWebHost LTD
+337 Bath Road
+Slough
+Berkshire
+SL1 5P
+United Kingdom
+Total
+$2100.00 USD
+Late Fee (Added 02/10/2016)
+$10.00 USD
+Sub Total
+Credit
+Grand Total
+$2110.00 USD
+$0.00 USD
+$2110.00 USD
