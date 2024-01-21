@@ -1,5 +1,9 @@
 {
-  "Tags": [],
+  "Tags": [
+    {
+      "Key": "Procesamento Inteligente de Documentos"
+    }
+  ],
   "SeparateRuntimeDependencies": true,
   "IncludeSources": true
 }
