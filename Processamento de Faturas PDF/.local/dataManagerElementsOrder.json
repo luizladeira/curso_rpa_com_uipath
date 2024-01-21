@@ -1,0 +1,29 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strNomeFatura&Sequence_3",
+        "strTotal&Sequence_3",
+        "strDataVencimento&Sequence_3",
+        "strDataFatura&Sequence_3",
+        "strNumeroFatura&Sequence_3",
+        "tabelaFatura&Sequence_2",
+        "arrayFicheiros&Sequence_2",
+        "strTexto&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
