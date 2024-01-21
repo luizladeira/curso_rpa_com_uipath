@@ -1,0 +1,4 @@
+Endpoints do Document Understanding
+https://docs.uipath.com/pt-BR/document-understanding/automation-cloud/latest
+https://docs.uipath.com/pt-BR/document-understanding/automation-cloud/latest/classic-user-guide/use-the-discovery-service
+https://docs.uipath.com/pt-BR/document-understanding/automation-cloud/latest/classic-user-guide/api-key
