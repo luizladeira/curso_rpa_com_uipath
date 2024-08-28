@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
+    "net8.0-windows7.0": {
       "AutoMapper/9.0.0": {
         "type": "package",
         "dependencies": {
@@ -6714,7 +6714,7 @@
         }
       }
     },
-    "net6.0-windows7.0/win10-x64": {
+    "net8.0-windows7.0/win-x64": {
       "AutoMapper/9.0.0": {
         "type": "package",
         "dependencies": {
@@ -7794,14 +7794,7 @@
         "type": "package"
       },
       "Microsoft.Management.Infrastructure.Runtime.Win/2.0.0": {
-        "type": "package",
-        "runtime": {
-          "runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {},
-          "runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {}
-        },
-        "native": {
-          "runtimes/win10-x64/native/_._": {}
-        }
+        "type": "package"
       },
       "Microsoft.NETCore.Platforms/1.1.1": {
         "type": "package",
@@ -8600,8 +8593,7 @@
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "runtime.win7-x64.runtime.native.System.IO.Compression": "4.3.2"
+          "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -8836,21 +8828,6 @@
         },
         "runtime": {
           "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
-        }
-      },
-      "runtime.win7-x64.runtime.native.System.IO.Compression/4.3.2": {
-        "type": "package",
-        "native": {
-          "runtimes/win7-x64/native/_._": {}
-        }
-      },
-      "runtime.win7.System.Private.Uri/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard/_._": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
       "SharpZipLib/1.3.3": {
@@ -9907,8 +9884,7 @@
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "runtime.win7.System.Private.Uri": "4.3.0"
+          "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
           "ref/netstandard/_._": {}
@@ -16861,38 +16837,6 @@
         "runtimes/win/lib/net/_._",
         "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll",
         "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll"
-      ]
-    },
-    "runtime.win7-x64.runtime.native.System.IO.Compression/4.3.2": {
-      "sha512": "QZj+xNVPDGJV1hs/bW5HIhiN/LOpKvmPlJiWr9H2kqucFKD0ZzZJYzJbE1W267QEe/Rl+WXODdmfrZuv8b9tVw==",
-      "type": "package",
-      "path": "runtime.win7-x64.runtime.native.system.io.compression/4.3.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "runtime.win7-x64.runtime.native.system.io.compression.4.3.2.nupkg.sha512",
-        "runtime.win7-x64.runtime.native.system.io.compression.nuspec",
-        "runtimes/win7-x64/native/clrcompression.dll",
-        "runtimes/win7-x64/nativeassets/netcore50/clrcompression.dll"
-      ]
-    },
-    "runtime.win7.System.Private.Uri/4.3.0": {
-      "sha512": "Q+IBgaPYicSQs2tBlmXqbS25c/JLIthWrgrpMwxKSOobW/OqIMVFruUGfuaz4QABVzV8iKdCAbN7APY7Tclbnw==",
-      "type": "package",
-      "path": "runtime.win7.system.private.uri/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/netstandard/_._",
-        "runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
-        "runtime.win7.system.private.uri.nuspec",
-        "runtimes/aot/lib/netcore50/System.Private.Uri.dll",
-        "runtimes/win/lib/netcore50/System.Private.Uri.dll",
-        "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
       ]
     },
     "SharpZipLib/1.3.3": {
@@ -26888,7 +26832,7 @@
   },
   "projectFileDependencyGroups": {
     "": [],
-    "net6.0-windows7.0": [
+    "net8.0-windows7.0": [
       "UiPath.DocumentUnderstanding.ML.Activities >= 1.25.0-preview <= 1.25.0-preview",
       "UiPath.Excel.Activities >= 2.23.0-preview <= 2.23.0-preview",
       "UiPath.IntelligentOCR.Activities >= 6.15.0-preview <= 6.15.0-preview",
@@ -26910,7 +26854,7 @@
       "outputPath": "C:\\Users\\luiz.araujo\\Documents\\Estudos\\udemy\\curso_rpa_com_uipath\\Processamento Inteligente de Documentos\\.local"
     },
     "frameworks": {
-      "net6.0-windows7.0": {
+      "net8.0-windows7.0": {
         "dependencies": {
           "UiPath.DocumentUnderstanding.ML.Activities": {
             "include": "Runtime",
@@ -26948,11 +26892,11 @@
             "version": "[23.10.8, 23.10.8]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\luiz.araujo\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\luiz.araujo\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
-      "win10-x64": {
+      "win-x64": {
         "#import": []
       }
     }

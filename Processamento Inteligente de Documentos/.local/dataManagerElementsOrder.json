@@ -1,0 +1,46 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strTaxonomia&",
+        "strCaminhoPastaDocumento&",
+        "strTextoDocumento&",
+        "modeloDocumento&",
+        "strUipathOcrEndpoint&",
+        "strApiKey&",
+        "resultadoClassificacao&",
+        "strResultadosExtracao&",
+        "strInvoceEndpoint&",
+        "strFormExtractorEndpoint&",
+        "strDataSet_extracao&",
+        "strCaminhoExtracao&"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strTaxonomia&Sequence_1",
+        "strCaminhoPastaDocumento&Sequence_1",
+        "strTextoDocumento&Sequence_2",
+        "modeloDocumento&Sequence_2",
+        "strUipathOcrEndpoint&Sequence_2",
+        "strApiKey&Sequence_2",
+        "resultadoClassificacao&Sequence_2",
+        "strResultadosExtracao&Sequence_2",
+        "strInvoceEndpoint&Sequence_2",
+        "strFormExtractorEndpoint&Sequence_2",
+        "strDataSet_extracao&Sequence_2",
+        "strCaminhoExtracao&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

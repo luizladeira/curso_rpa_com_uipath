@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3KOhN0Lkc9d2YIPjDIXdVsLGLdxz8ayzO8rzZOCwZHTj2t/22xzEIYQVcZWP2H1Qj163rRys19If1kNGfexUdw==",
+  "dgSpecHash": "m/0n8vdw12C2W3Ehu+/j+LPc34oaMQHWXj0jIHOhrzBxl8qBsQwI3KeXGAYk6HJEi5G7Qq5ZAKFM2El1DEqOWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\luiz.araujo\\Documents\\Estudos\\udemy\\curso_rpa_com_uipath\\Processamento Inteligente de Documentos\\.local\\",
   "expectedPackageFiles": [
@@ -150,8 +150,6 @@
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\runtime.win.system.net.primitives\\4.3.0\\runtime.win.system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\runtime.win.system.net.sockets\\4.3.0\\runtime.win.system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtime.win.system.runtime.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\luiz.araujo\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.2\\runtime.win7-x64.runtime.native.system.io.compression.4.3.2.nupkg.sha512",
-    "C:\\Users\\luiz.araujo\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20231124.2\\system.activities.viewmodels.1.0.0-20231124.2.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
