@@ -3,20 +3,7 @@
     {
       "Path": null,
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "strTaxonomia&",
-        "strCaminhoPastaDocumento&",
-        "strTextoDocumento&",
-        "modeloDocumento&",
-        "strUipathOcrEndpoint&",
-        "strApiKey&",
-        "resultadoClassificacao&",
-        "strResultadosExtracao&",
-        "strInvoceEndpoint&",
-        "strFormExtractorEndpoint&",
-        "strDataSet_extracao&",
-        "strCaminhoExtracao&"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

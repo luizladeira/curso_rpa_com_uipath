@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>782,4910.666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>782,4908.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -60,6 +60,7 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -135,7 +136,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="792,4846" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="792,4844" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="p9:DocumentTaxonomy" Name="strTaxonomia" />
       <Variable x:TypeArguments="x:String" Default="C:\Users\luiz.araujo\Documents\Estudos\udemy\curso_rpa_com_uipath\Processamento Inteligente de Documentos\Documentos" Name="strCaminhoPastaDocumento" />
@@ -145,8 +146,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="730,106.66666666666667" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[strTaxonomia]" />
-    <ui:ForEachFileX DisplayName="For Each File In Folder" Folder="[strCaminhoPastaDocumento]" sap:VirtualizedContainerService.HintSize="730,4588.666666666667" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="730,140" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_4" Taxonomy="[strTaxonomia]" />
+    <ui:ForEachFileX DisplayName="For Each File In Folder" Folder="[strCaminhoPastaDocumento]" sap:VirtualizedContainerService.HintSize="730,4616" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -160,23 +161,11 @@
               <Variable x:TypeArguments="x:String" Name="strTextoDocumento" />
               <Variable x:TypeArguments="p3:Document" Name="modeloDocumento" />
               <Variable x:TypeArguments="x:String" Default="https://du.uipath.com/ocr" Name="strUipathOcrEndpoint" />
-              <Variable x:TypeArguments="x:String" Name="strApiKey">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">/m1zuAsIr/oQiURyZifcMVAXUh06QZZUaF2bf5eKXMkmZM+81RDWTcqUIHnCHzXSaqRVhOF9FuSuTkg6xmXJ8Q==</Literal>
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:String" Default="/m1zuAsIr/oQiURyZifcMVAXUh06QZZUaF2bf5eKXMkmZM+81RDWTcqUIHnCHzXSaqRVhOF9FuSuTkg6xmXJ8Q==" Name="strApiKey" />
               <Variable x:TypeArguments="p8:ClassificationResult[]" Name="resultadoClassificacao" />
               <Variable x:TypeArguments="p8:ExtractionResult" Name="strResultadosExtracao" />
-              <Variable x:TypeArguments="x:String" Name="strInvoceEndpoint">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">https://du.uipath.com/ie/invoices</Literal>
-                </Variable.Default>
-              </Variable>
-              <Variable x:TypeArguments="x:String" Name="strFormExtractorEndpoint">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">https://du.uipath.com/svc/formextractor</Literal>
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:String" Default="https://du.uipath.com/ie/invoices" Name="strInvoceEndpoint" />
+              <Variable x:TypeArguments="x:String" Default="https://du.uipath.com/svc/formextractor" Name="strFormExtractorEndpoint" />
               <Variable x:TypeArguments="sd2:DataSet" Name="strDataSet_extracao" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
@@ -439,11 +428,7 @@
                   </ActivityAction.Argument>
                   <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,203.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="strCaminhoExtracao">
-                        <Variable.Default>
-                          <Literal x:TypeArguments="x:String">C:\Users\luiz.araujo\Documents\Estudos\udemy\curso_rpa_com_uipath\Processamento Inteligente de Documentos\Documentos\Extracao</Literal>
-                        </Variable.Default>
-                      </Variable>
+                      <Variable x:TypeArguments="x:String" Default="C:\Users\luiz.araujo\Documents\Estudos\udemy\curso_rpa_com_uipath\Processamento Inteligente de Documentos\Documentos\Extracao" Name="strCaminhoExtracao" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
