@@ -253,6 +253,108 @@
           "DataSource": null
         }
       ]
+    },
+    {
+      "Connections": [],
+      "DocumentTypeId": "NoGroup.NoCategory.FormuláriodeSeguro",
+      "Group": "",
+      "Category": "",
+      "Name": "Formulário de Seguro",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "NoGroup.NoCategory.FormuláriodeSeguro.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "NoGroup.NoCategory.FormuláriodeSeguro.iddoPaciente",
+          "FieldName": "id do Paciente",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.FormuláriodeSeguro.Paciente",
+          "FieldName": "Paciente",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.FormuláriodeSeguro.DatadeNascimento",
+          "FieldName": "Data de Nascimento",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.FormuláriodeSeguro.Endereço",
+          "FieldName": "Endereço",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ],
+          "RuleSet": null,
+          "DefaultValue": "",
+          "DataSource": null
+        }
+      ]
     }
   ],
   "Groups": [],
