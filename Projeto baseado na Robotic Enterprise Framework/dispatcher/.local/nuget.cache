@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "D9NjVNCTjGyaHBqgLozkKsowPIc1hQgpztrM1oXqWWQEe3qio7gVxWDSuxbTtFv4N5Vtbp7/tFAo4ao3qf6XMA==",
+  "dgSpecHash": "mrYO+23Uwpl9kNFoDO5QPOlOITvtKYKZwsMczaPi7qoa5823jk+dx8DY+E207tCzsO0fn0NyxnFJwWjKMBYxPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\luiz.araujo\\Documents\\cursos\\curso_rpa_com_uipath\\Projeto baseado na Robotic Enterprise Framework\\dispatcher\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\closedxml\\0.100.3\\closedxml.0.100.3.nupkg.sha512",
+    "C:\\Users\\luiz.araujo\\.nuget\\packages\\credentialmanagement.standard\\1.0.4\\credentialmanagement.standard.1.0.4.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
@@ -237,6 +238,7 @@
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\uipath\\24.11.100.10028-preview\\uipath.24.11.100.10028-preview.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\uipath.codedworkflows\\24.10.0\\uipath.codedworkflows.24.10.0.nupkg.sha512",
+    "C:\\Users\\luiz.araujo\\.nuget\\packages\\uipath.credentials.activities\\2.0.0\\uipath.credentials.activities.2.0.0.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0-preview\\uipath.emgucvbundle.1.3.0-preview.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\uipath.excel.activities\\2.24.0-preview\\uipath.excel.activities.2.24.0-preview.nupkg.sha512",
     "C:\\Users\\luiz.araujo\\.nuget\\packages\\uipath.imageprocessing\\24.10.0\\uipath.imageprocessing.24.10.0.nupkg.sha512",

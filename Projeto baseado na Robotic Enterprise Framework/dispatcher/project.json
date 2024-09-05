@@ -4,6 +4,7 @@
   "description": "Projeto baseado na Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.System.Activities": "[24.11.0-preview]",
     "UiPath.Testing.Activities": "[24.10.0]",
